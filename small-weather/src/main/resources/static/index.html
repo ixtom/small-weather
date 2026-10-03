@@ -22,9 +22,7 @@
         <div class="dropdown">
             <button class="dropbtn ntext">About</button>
             <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                <a href="#">Placeholder xo</a>
             </div>
         </div>
         <div class="dropdown">
@@ -40,11 +38,21 @@
     </h1>
     <p>Select a Canadian city:</p>
     <select name="canadian cities" id="can citites">
-        <option value="#">Vancouver, BC</option>
-        <option value="#">Halifax, NS</option>
-        <option value="#">Calgary, AB</option>
-        <option value="#">Victoria, BC</option>
-        <option value="#">Toronto, ON</option>
+        <option value="Vancouver"
+            data-lat="49.2827"
+            data-lon="-123.1207">Vancouver, BC</option>
+        <option value="Halifax"
+            data-lat="44.6488"
+            data-lon="-63.5752">Halifax, NS</option>
+        <option value="Calgary"
+            data-lat="51.0447"
+            data-lon="-114.0719">Calgary, AB</option>
+        <option value="Victoria"
+            data-lat="48.4284"
+            data-lon="-123.3656">Victoria, BC</option>
+        <option value="Toronto"
+            data-lat="43.6532"
+            data-lon="-79.3832">Toronto, ON</option>
     </select>
     <button onclick="sendweather()">
         view city
@@ -53,43 +61,43 @@
     <div style="margin:auto;display:flex;flex-wrap: wrap;row-gap: 10px;gap:10px">
         <div class="dropdown">
                 <form action="#" method="get">
-                <button class="dropbtn ntext">Kingston, Jamaica</button></form>
+                <button class="dropbtn ntext"onclick="getWeather('Kingston', 17.997, -76.7936)">Kingston, Jamaica</button></form>
         </div>
         <div class="dropdown">
                 <form action="#" method="get">
-                <button class="dropbtn ntext">Singapore, Singapore</button></form>
+                <button class="dropbtn ntext"onclick="getWeather('Singapore', 1.2897, 103.8501)">Singapore, Singapore</button></form>
         </div>
         <div class="dropdown">
                 <form action="#" method="get">
-                <button class="dropbtn ntext">Moscow, Russia</button></form>
+                <button class="dropbtn ntext"onclick="getWeather('Moscow', 55.752, 37.6178)">Moscow, Russia</button></form>
         </div>
         <div class="dropdown">
                 <form action="#" method="get">
-                <button class="dropbtn ntext">Bangkok, Thailand</button></form>
+                <button class="dropbtn ntext"onclick="getWeather('Bangkok', 13.754 100.5014)">Bangkok, Thailand</button></form>
         </div>
         <div class="dropdown">
                 <form action="#" method="get">
-                <button class="dropbtn ntext">Hanoi, Vietnam</button></form>
+                <button class="dropbtn ntext"onclick="getWeather('Hanoi', 21.0245 105.8412)">Hanoi, Vietnam</button></form>
         </div>
         <div class="dropdown">
                 <form action="#" method="get">
-                <button class="dropbtn ntext">Sydney, Australia</button></form>
+                <button class="dropbtn ntext"onclick="getWeather('Sydney', -33.8678 151.2073)">Sydney, Australia</button></form>
         </div>
         <div class="dropdown">
                 <form action="#" method="get">
-                <button class="dropbtn ntext">Manila, Philippines</button></form>
+                <button class="dropbtn ntext"onclick="getWeather('Manila', 14.6042 120.9822)">Manila, Philippines</button></form>
         </div>
         <div class="dropdown">
                 <form action="#" method="get">
-                <button class="dropbtn ntext">Bloemfontein, South Africa</button></form>
+                <button class="dropbtn ntext"onclick="getWeather('Bloemfontein', -29.1211 26.214)">Bloemfontein, South Africa</button></form>
         </div>
         <div class="dropdown">
                 <form action="#" method="get">
-                <button class="dropbtn ntext">Rio de Janeiro, Brazil</button></form>
+                <button class="dropbtn ntext"onclick="getWeather('Rio de Janeiro', -22.9064 -43.1822)">Rio de Janeiro, Brazil</button></form>
         </div>
         <div class="dropdown">
                 <form action="#" method="get">
-                <button class="dropbtn ntext">San Francisco, United States of America</button></form>
+                <button class="dropbtn ntext"onclick="getWeather('San Francisco', 37.7749 -122.4194)">San Francisco, United States of America</button></form>
         </div>
     </div>
     <div id="weather"></div>
