@@ -23,7 +23,10 @@
         <div class="dropdown">
             <button class="dropbtn ntext">About</button>
             <div class="dropdown-content">
-                <a href="#">Placeholder xo</a>
+                <a href="https://canvas.sfu.ca/courses/16185/assignments/226563">Assignment page</a>
+                <a href="https://github.com/ixtom/small-weather/pull/1">PR #1</a>
+                <a href="https://github.com/ixtom/small-weather/pull/2">PR #2</a>
+                <a href="https://github.com/ixtom/small-weather/pull/3">PR #3</a>
             </div>
         </div>
         <div class="dropdown">
@@ -34,7 +37,23 @@
 </div>
 
 <div style="padding:30px 30px 30px 30px">
-    <h1><i class="fa-solid fa-umbrella fa-spin-snap-8"></i>
+    <div style="flex-wrap: wrap;display: flex;align-items: center;justify-content: center;gap:50px;row-gap: 0px !important;">
+    <!-- I looked up how to add ASCII art to html without text wrap here: https://stackoverflow.com/questions/1702559/ascii-art-in-html-->
+    <pre style="white-space: pre; font-family: monospace; overflow-x: auto;"> 
+           ^^                   @@@@@@@@@
+      ^^       ^^            @@@@@@@@@@@@@@@
+                           @@@@@@@@@@@@@@@@@@              ^^
+                          @@@@@@@@@@@@@@@@@@@@
+~~~~ ~~ ~~~~~ ~~~~~~~~ ~~ &&&&&&&&&&&&&&&&&&&& ~~~~~~~ ~~~~~~~~~~~ ~~~
+~         ~~   ~  ~       ~~~~~~~~~~~~~~~~~~~~ ~       ~~     ~~ ~
+  ~      ~~      ~~ ~~ ~~  ~~~~~~~~~~~~~ ~~~~  ~     ~~~    ~ ~~~  ~ ~~ 
+  ~  ~~     ~         ~      ~~~~~~  ~~ ~~~       ~~ ~ ~~  ~~ ~ 
+~  ~       ~ ~      ~           ~~ ~~~~~~  ~      ~~  ~             ~~
+      ~             ~        ~      ~      ~~   ~             ~
+
+    </pre><div id="weather"></div></div>
+    
+    <h1 style="margin-top: 70px;"><i class="fa-solid fa-umbrella fa-spin-snap-8"></i>
         small weather
     </h1>
     <p>Select a Canadian city:</p>
@@ -101,7 +120,7 @@
                 <button class="dropbtn ntext"onclick="sendweather('San Francisco', 37.7749, -122.4194)">San Francisco, United States of America</button></form>
         </div>
     </div>
-    <div id="weather"></div>
+    
 </div>
 
 
