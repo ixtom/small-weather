@@ -21,15 +21,34 @@ async function sendweather(city, latitude, longitude) {
         const temperature = data.current.temperature_2m;
         const wind = data.current.wind_speed_10m;
         const timezone = data.timezone_abbreviation;
-
+        if (temperature<15){
         weather.innerHTML = `
             <div style="">
             <h1>${city}</h1>
-            <p>Temperature: ${temperature} °C</p>
+            <p>Temperature: ${temperature} °C <i class="fa-solid fa-snowflake"></i></p>
             <p>Wind: ${wind} km/h</p>
             <p>Timezone: ${timezone}</p>
             </div>
         `;
+        } else if (temperature>25){
+        weather.innerHTML = `
+            <div style="">
+            <h1>${city}</h1>
+            <p>Temperature: ${temperature} °C <i class="fa-solid fa-fire"></i></p>
+            <p>Wind: ${wind} km/h</p>
+            <p>Timezone: ${timezone}</p>
+            </div>
+        `;
+        } else{
+        weather.innerHTML = `
+            <div style="">
+            <h1>${city}</h1>
+            <p>Temperature: ${temperature} °C <i class="fa-solid fa-temperature-half"></i></p>
+            <p>Wind: ${wind} km/h</p>
+            <p>Timezone: ${timezone}</p>
+            </div>
+        `;
+        };
 
     } catch (error) {
 
@@ -70,15 +89,34 @@ async function sendweatherselect() {
         const wind = data.current.wind_speed_10m;
         const timezone = data.timezone_abbreviation;
 
+        if (temperature<15){
         weather.innerHTML = `
+            <div style="">
             <h1>${city}</h1>
-
-            <p>Temperature: ${temperature} °C</p>
-
+            <p>Temperature: ${temperature} °C <i class="fa-solid fa-snowflake"></i></p>
             <p>Wind: ${wind} km/h</p>
-
             <p>Timezone: ${timezone}</p>
+            </div>
         `;
+        } else if (temperature>25){
+        weather.innerHTML = `
+            <div style="">
+            <h1>${city}</h1>
+            <p>Temperature: ${temperature} °C <i class="fa-solid fa-fire"></i></p>
+            <p>Wind: ${wind} km/h</p>
+            <p>Timezone: ${timezone}</p>
+            </div>
+        `;
+        } else{
+        weather.innerHTML = `
+            <div style="">
+            <h1>${city}</h1>
+            <p>Temperature: ${temperature} °C <i class="fa-solid fa-temperature-half"></i></p>
+            <p>Wind: ${wind} km/h</p>
+            <p>Timezone: ${timezone}</p>
+            </div>
+        `;
+        };
 
     } catch (error) {
 
