@@ -7,7 +7,7 @@ async function sendweather() {
     const latitude = selectedcity.dataset.lat;
     const longitude = selectedcity.dataset.lon;
 
-    weather.innerHTML = '<h1>Loading...</h1>';
+    weather.innerHTML = '<h1>Loading...  <i class="fa-solid fa-spinner fa-spin-pulse"></i></h1>';
 
     try {
 
