@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>small weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Geist+Mono:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3c553fe8e0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+
+<div id="navbar">
+    <div class="dropdown">
+        <button class="dropbtn ntext" onclick="window.location.href='#';">Small Weather</button>
+    </div>
+    <div style=" display: flex;flex-direction: row;flex-wrap: wrap;gap:10px">
+        <div class="dropdown">
+            <button class="dropbtn ntext">About</button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <form action="https://github.com/ixtom/small-weather" method="get">
+            <button class="dropbtn ntext">Repo</button></form>
+        </div>        
+    </div>
+</div>
+
+<div style="padding:30px 30px 30px 30px">
+    <h1><i class="fa-solid fa-umbrella fa-spin-snap-8"></i>
+        small weather
+    </h1>
+    <p>Select a Canadian city:</p>
+    <select name="canadian cities" id="can citites">
+        <option value="#">Vancouver, BC</option>
+        <option value="#">Halifax, NS</option>
+        <option value="#">Calgary, AB</option>
+        <option value="#">Victoria, BC</option>
+        <option value="#">Toronto, ON</option>
+    </select>
+    <button onclick="sendweather()">
+        view city
+    </button>
+    <p>Or... select a preset city:</p>
+    <div style="margin:auto;display:flex;flex-wrap: wrap;row-gap: 10px;gap:10px">
+        <div class="dropdown">
+                <form action="#" method="get">
+                <button class="dropbtn ntext">Kingston, Jamaica</button></form>
+        </div>
+        <div class="dropdown">
+                <form action="#" method="get">
+                <button class="dropbtn ntext">Singapore, Singapore</button></form>
+        </div>
+        <div class="dropdown">
+                <form action="#" method="get">
+                <button class="dropbtn ntext">Moscow, Russia</button></form>
+        </div>
+        <div class="dropdown">
+                <form action="#" method="get">
+                <button class="dropbtn ntext">Bangkok, Thailand</button></form>
+        </div>
+        <div class="dropdown">
+                <form action="#" method="get">
+                <button class="dropbtn ntext">Hanoi, Vietnam</button></form>
+        </div>
+        <div class="dropdown">
+                <form action="#" method="get">
+                <button class="dropbtn ntext">Sydney, Australia</button></form>
+        </div>
+        <div class="dropdown">
+                <form action="#" method="get">
+                <button class="dropbtn ntext">Manila, Philippines</button></form>
+        </div>
+        <div class="dropdown">
+                <form action="#" method="get">
+                <button class="dropbtn ntext">Bloemfontein, South Africa</button></form>
+        </div>
+        <div class="dropdown">
+                <form action="#" method="get">
+                <button class="dropbtn ntext">Rio de Janeiro, Brazil</button></form>
+        </div>
+        <div class="dropdown">
+                <form action="#" method="get">
+                <button class="dropbtn ntext">San Francisco, United States of America</button></form>
+        </div>
+    </div>
+    <div id="weather"></div>
+</div>
+
+
+</body>
+</html>
