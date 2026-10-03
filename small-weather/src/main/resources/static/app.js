@@ -42,6 +42,7 @@ async function sendweather() {
         console.error(error);
 
         weather.innerHTML =
-            "Unable to retrieve weather data.";
+            `<h1>UHHH OH</h1>
+            <p>Unable to retrieve weather data.</p>`;
     }
 }
